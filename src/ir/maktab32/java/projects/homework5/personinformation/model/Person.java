@@ -44,4 +44,14 @@ public class Person {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "\tPerson{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                '}';
+    }
 }

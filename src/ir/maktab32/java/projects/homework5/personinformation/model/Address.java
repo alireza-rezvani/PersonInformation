@@ -2,12 +2,12 @@ package ir.maktab32.java.projects.homework5.personinformation.model;
 
 public class Address {
     private String city;
-    private String zone;
+    private int zone;
     private String street;
     private String alley;
     private String postalCode;
 
-    public Address(String city, String zone, String street, String alley, String postalCode) {
+    public Address(String city, int zone, String street, String alley, String postalCode) {
         this.city = city;
         this.zone = zone;
         this.street = street;
@@ -23,11 +23,11 @@ public class Address {
         this.city = city;
     }
 
-    public String getZone() {
+    public int getZone() {
         return zone;
     }
 
-    public void setZone(String zone) {
+    public void setZone(int zone) {
         this.zone = zone;
     }
 
@@ -53,5 +53,16 @@ public class Address {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", zone=" + zone +
+                ", street='" + street + '\'' +
+                ", alley='" + alley + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                '}';
     }
 }
